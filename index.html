@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BirthBeat – Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --purple: #7C4DFF;
+      --purple-dark: #4a148c;
+      --blue: #2196F3;
+      --blue-light: #90CAF9;
+      --bg: #0d0a1a;
+      --surface: #130f2a;
+      --surface2: #1c1640;
+      --text: #f0ecff;
+      --text-muted: #a89dcc;
+      --border: rgba(124, 77, 255, 0.2);
+      --gradient: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Ambient background orbs */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -200px;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(124, 77, 255, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* Header */
+    header {
+      padding: 60px 0 48px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 56px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(124, 77, 255, 0.4);
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    h1 em {
+      font-style: italic;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 400;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .meta span::before {
+      content: '·';
+      margin-right: 8px;
+      color: var(--purple);
+    }
+    .meta span:first-child::before { display: none; }
+
+    /* Highlight box */
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--purple);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 56px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .highlight-box strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 52px;
+      animation: fadeUp 0.5s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    section:nth-child(2)  { animation-delay: 0.05s; }
+    section:nth-child(3)  { animation-delay: 0.10s; }
+    section:nth-child(4)  { animation-delay: 0.15s; }
+    section:nth-child(5)  { animation-delay: 0.20s; }
+    section:nth-child(6)  { animation-delay: 0.25s; }
+    section:nth-child(7)  { animation-delay: 0.30s; }
+    section:nth-child(8)  { animation-delay: 0.35s; }
+    section:nth-child(9)  { animation-delay: 0.40s; }
+    section:nth-child(10) { animation-delay: 0.45s; }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--gradient);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-size: 0.97rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* Pill list */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .pill {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pill .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gradient);
+      flex-shrink: 0;
+    }
+
+    /* Card grid for third parties */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(124, 77, 255, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .card-title {
+      font-weight: 500;
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .card-tag {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: rgba(124, 77, 255, 0.15);
+      color: var(--blue-light);
+      border: 1px solid rgba(124, 77, 255, 0.3);
+    }
+
+    /* GDPR rights grid */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .right-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .right-item .icon {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .right-item .label {
+      font-weight: 500;
+      color: var(--text);
+      font-size: 0.88rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .right-item .desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* Big green "no data" banner */
+    .no-data-banner {
+      background: linear-gradient(135deg, rgba(124,77,255,0.12), rgba(33,150,243,0.12));
+      border: 1px solid rgba(124, 77, 255, 0.3);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .no-data-banner .icon { font-size: 2.5rem; margin-bottom: 12px; }
+
+    .no-data-banner .label {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .no-data-banner p {
+      font-size: 0.9rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 20px;
+    }
+
+    .contact-box a {
+      color: var(--blue-light);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(144, 202, 249, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    .contact-box a:hover { border-color: var(--blue-light); }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* Footer */
+    footer {
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-brand {
+      font-family: 'DM Serif Display', serif;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Medical disclaimer banner */
+    .medical-banner {
+      background: linear-gradient(135deg, rgba(255, 152, 0, 0.08), rgba(244, 67, 54, 0.08));
+      border: 1px solid rgba(255, 152, 0, 0.35);
+      border-left: 3px solid #FF9800;
+      border-radius: 16px;
+      padding: 28px;
+      margin: 20px 0;
+    }
+
+    .medical-banner .banner-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .medical-banner .banner-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+
+    .medical-banner .banner-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      color: #FFB74D;
+      letter-spacing: -0.01em;
+    }
+
+    .medical-banner p {
+      color: var(--text-muted);
+      font-size: 0.93rem;
+      margin-bottom: 12px;
+    }
+
+    .medical-banner p:last-child { margin-bottom: 0; }
+
+    .medical-banner strong {
+      color: #FFB74D;
+      font-weight: 500;
+    }
+
+    .warning-list {
+      list-style: none;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .warning-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .warning-list li::before {
+      content: '⚠';
+      color: #FF9800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Responsive */
+    @media (max-width: 520px) {
+      header { padding: 40px 0 36px; }
+      .card-grid, .rights-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <div class="logo-row">
+        <div class="logo-icon">🌸</div>
+        <span class="logo-name">BirthBeat</span>
+      </div>
+      <h1>Your <em>privacy</em>,<br>fully protected.</h1>
+      <div class="meta">
+        <span>Effective date: February 1, 2026</span>
+        <span>Last updated: February 1, 2026</span>
+        <span>GDPR compliant</span>
+      </div>
+    </header>
+
+    <div class="highlight-box">
+      <strong>The short version:</strong> BirthBeat does not collect, store, or share any personal data. All contraction data stays on your device. We built this app to support you — not to harvest your information.
+    </div>
+
+    <!-- 1. Who we are -->
+    <section>
+      <h2><span class="num">1</span> Who We Are</h2>
+      <p>BirthBeat is a contraction timing app for expectant mothers, developed and maintained as an independent project. This privacy policy explains how we handle information when you use our app on iOS and Android.</p>
+      <p>For any questions about this policy, you can reach us at the contact details at the bottom of this page.</p>
+    </section>
+
+    <!-- 2. Data we collect -->
+    <section>
+      <h2><span class="num">2</span> Data We Collect</h2>
+
+      <div class="no-data-banner">
+        <div class="icon">🔒</div>
+        <div class="label">We collect no personal data</div>
+        <p>All contraction records, settings, and session history are stored exclusively on your device using local storage. Nothing is transmitted to us or any external server.</p>
+      </div>
+
+      <p>Specifically, BirthBeat does <strong style="color: var(--text);">not</strong> collect:</p>
+      <div class="pill-list">
+        <div class="pill"><span class="dot"></span> Name or identity</div>
+        <div class="pill"><span class="dot"></span> Email address</div>
+        <div class="pill"><span class="dot"></span> Location data</div>
+        <div class="pill"><span class="dot"></span> Health or medical data</div>
+        <div class="pill"><span class="dot"></span> Device identifiers</div>
+        <div class="pill"><span class="dot"></span> Usage analytics</div>
+        <div class="pill"><span class="dot"></span> Crash reports</div>
+        <div class="pill"><span class="dot"></span> IP addresses</div>
+      </div>
+    </section>
+
+    <!-- 3. Data stored on your device -->
+    <section>
+      <h2><span class="num">3</span> Data Stored on Your Device</h2>
+      <p>BirthBeat stores the following data <strong style="color: var(--text);">locally on your device only</strong>, using your phone's built-in storage. This data never leaves your device and is never accessible to us:</p>
+      <div class="pill-list">
+        <div class="pill"><span class="dot"></span> Contraction start and end times</div>
+        <div class="pill"><span class="dot"></span> Contraction duration and frequency</div>
+        <div class="pill"><span class="dot"></span> Session history grouped by date</div>
+        <div class="pill"><span class="dot"></span> App settings and preferences</div>
+        <div class="pill"><span class="dot"></span> First-time mother preference</div>
+        <div class="pill"><span class="dot"></span> Optional due date</div>
+        <div class="pill"><span class="dot"></span> Hospital criteria selection</div>
+      </div>
+      <p>You can delete all locally stored data at any time from within the app via Settings → Clear All Data.</p>
+    </section>
+
+    <!-- 4. Third-party services -->
+    <section>
+      <h2><span class="num">4</span> Third-Party Services</h2>
+      <p>BirthBeat uses a small number of third-party services, listed below. None of these services receive your contraction data or personal health information.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">Apple In-App Purchase</div>
+          <p class="card-desc">Used to process optional tip payments on iOS devices. Apple handles all payment data.</p>
+          <span class="card-tag">Payment processing</span>
+        </div>
+        <div class="card">
+          <div class="card-title">Google Play Billing</div>
+          <p class="card-desc">Used to process optional tip payments on Android devices. Google handles all payment data.</p>
+          <span class="card-tag">Payment processing</span>
+        </div>
+        <div class="card">
+          <div class="card-title">Expo / EAS</div>
+          <p class="card-desc">Used to build and distribute the app. Expo does not collect personal data through our use of their build service.</p>
+          <span class="card-tag">Build service</span>
+        </div>
+        <div class="card">
+          <div class="card-title">Google Firebase</div>
+          <p class="card-desc">Used for app crash reporting and stability monitoring only. No personal data or health data is included in crash reports.</p>
+          <span class="card-tag">Crash reporting</span>
+        </div>
+      </div>
+
+      <p>When you make an optional in-app tip purchase, the payment is processed entirely by Apple or Google according to their own privacy policies. We do not receive or store your payment details.</p>
+    </section>
+
+    <!-- 5. Legal basis (GDPR) -->
+    <section>
+      <h2><span class="num">5</span> Legal Basis for Processing (GDPR)</h2>
+      <p>As we are based in the European Union and do not collect personal data, standard GDPR legal basis requirements for data processing do not apply to BirthBeat's core functionality.</p>
+      <p>For crash reporting via Firebase, which may incidentally capture minimal technical device information, our legal basis is <strong style="color: var(--text);">legitimate interests</strong> — specifically, maintaining app stability and safety for all users. No personal or health data is included in these reports.</p>
+      <p>For in-app purchases, payment data is processed by Apple and Google under their respective legal bases and privacy policies. We act solely as the recipient of the tip — we do not process payment data ourselves.</p>
+    </section>
+
+    <!-- 6. Your GDPR rights -->
+    <section>
+      <h2><span class="num">6</span> Your Rights Under GDPR</h2>
+      <p>As a resident of the European Union or EEA, you have the following rights. Because we hold no personal data about you, most of these rights are already satisfied by design — but you may still exercise them at any time.</p>
+
+      <div class="rights-grid">
+        <div class="right-item">
+          <span class="icon">👁️</span>
+          <span class="label">Right of Access</span>
+          <p class="desc">Request a copy of any personal data we hold about you.</p>
+        </div>
+        <div class="right-item">
+          <span class="icon">✏️</span>
+          <span class="label">Right to Rectification</span>
+          <p class="desc">Request correction of inaccurate personal data.</p>
+        </div>
+        <div class="right-item">
+          <span class="icon">🗑️</span>
+          <span class="label">Right to Erasure</span>
+          <p class="desc">Request deletion of your personal data at any time.</p>
+        </div>
+        <div class="right-item">
+          <span class="icon">⏸️</span>
+          <span class="label">Right to Restriction</span>
+          <p class="desc">Request we restrict processing of your data.</p>
+        </div>
+        <div class="right-item">
+          <span class="icon">📦</span>
+          <span class="label">Right to Portability</span>
+          <p class="desc">Receive your data in a portable, machine-readable format.</p>
+        </div>
+        <div class="right-item">
+          <span class="icon">🚫</span>
+          <span class="label">Right to Object</span>
+          <p class="desc">Object to processing based on legitimate interests.</p>
+        </div>
+      </div>
+
+      <p>To exercise any of these rights, contact us using the details in Section 10. We will respond within 30 days. You also have the right to lodge a complaint with your national data protection authority.</p>
+    </section>
+
+    <!-- 7. Medical Disclaimer -->
+    <section>
+      <h2><span class="num">7</span> Medical Disclaimer</h2>
+
+      <div class="medical-banner">
+        <div class="banner-header">
+          <span class="banner-icon">⚕️</span>
+          <span class="banner-title">BirthBeat is not a medical device</span>
+        </div>
+        <p><strong>BirthBeat is a general-purpose contraction timing tool only.</strong> It is not a medical device or a medical application, does not provide medical advice, and is not a substitute for professional healthcare.</p>
+        <p>The guidance, classifications, and information provided within the app — including stage descriptions, timing advice, and recommendations — are for <strong>informational and organisational purposes only</strong>. They are based on general publicly available information and are not tailored to your individual medical situation.</p>
+        <p><strong>Always consult your doctor, midwife, or qualified healthcare provider</strong> for any medical decisions during your pregnancy and labour. Do not delay seeking professional medical attention based on anything shown in this app.</p>
+      </div>
+
+      <p>Specifically, BirthBeat:</p>
+      <ul class="warning-list">
+        <li>Does not diagnose any medical condition</li>
+        <li>Does not replace the advice of a licensed medical professional</li>
+        <li>Does not monitor fetal health or wellbeing</li>
+        <li>Cannot detect pregnancy complications</li>
+        <li>Is not approved or certified by any medical regulatory body (e.g. FDA, CE, MDR)</li>
+        <li>Does not constitute a clinical decision support tool</li>
+      </ul>
+
+      <p>If you experience heavy bleeding, severe constant pain, reduced fetal movement, water breaking with discoloured fluid, fever over 38°C (100.4°F), or any other concerning symptom, <strong>contact your healthcare provider or emergency services immediately</strong> — do not rely solely on this app.</p>
+
+      <p>By using BirthBeat, you acknowledge and accept that the app is a timing aid only, and that all medical decisions remain the responsibility of you and your qualified healthcare team.</p>
+    </section>
+
+    <!-- 8. Children -->
+    <section>
+      <h2><span class="num">8</span> Children's Privacy</h2>
+      <p>BirthBeat is intended for use by pregnant adults. We do not knowingly collect data from anyone under the age of 16. If you believe a minor has used this app, please contact us and we will take appropriate action.</p>
+    </section>
+
+    <!-- 9. Data retention -->
+    <section>
+      <h2><span class="num">9</span> Data Retention</h2>
+      <p>Since all data is stored locally on your device, you are in full control of retention. Data remains on your device until you:</p>
+      <div class="pill-list">
+        <div class="pill"><span class="dot"></span> Manually clear it via Settings → Clear All Data</div>
+        <div class="pill"><span class="dot"></span> Uninstall the app</div>
+        <div class="pill"><span class="dot"></span> Reset your device</div>
+      </div>
+      <p>We do not hold any copies of your data and cannot recover it if deleted.</p>
+    </section>
+
+    <!-- 10. Contact -->
+    <section>
+      <h2><span class="num">10</span> Contact Us</h2>
+      <p>If you have any questions about this privacy policy or wish to exercise your GDPR rights, please get in touch:</p>
+      <div class="contact-box">
+        <p><strong style="color: var(--text);">BirthBeat</strong></p>
+        <p>Email: <a href="mailto:m.perepelov@gmail.com">m.perepelov@gmail.com</a></p>
+        <p>Based in the European Union</p>
+        <p style="margin-top: 16px; font-size: 0.85rem;">We aim to respond to all privacy-related enquiries within <strong style="color: var(--text);">30 days</strong> in accordance with GDPR requirements.</p>
+      </div>
+    </section>
+
+    <!-- 11. Changes -->
+    <section>
+      <h2><span class="num">11</span> Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. When we do, we will update the "Last updated" date at the top of this page and, where appropriate, notify users via an in-app notice.</p>
+      <p>We encourage you to review this page periodically. Continued use of BirthBeat after any changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <footer>
+      <span class="footer-brand">BirthBeat</span>
+      <span>© 2025 BirthBeat. All rights reserved.</span>
+      <span>GDPR Compliant · EU Based</span>
+    </footer>
+
+  </div>
+</body>
+</html>
